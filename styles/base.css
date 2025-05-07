@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+body {
+    font-family: ;
+}
+
+nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly; /*will space out my links evenly. Can be used if display is flex*/
+    background-color: rgb(94, 21, 21);
+}
+
+nav a {
+    list-style-type: none;
+    display: block;
+    color: white;
+    text-align: center; /*will align my text for my links to the center*/
+    padding: 1rem;
+    flex: 1 1 100%;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 2px solid white;
+}
+
+main {
+    display: flex;
+    margin: 1rem;
+    padding: 10px;
+    height: 30rem;
+}
+
+h2, h3 {
+    background-color: rgb(240, 205, 205);
+    padding: 0.5rem;
+}
+
+.card {
+    text-align: center;
+    grid-column: 1/3;
+	grid-row: 2/4;
+    border: 2px solid black;
+    width: 60rem;
+	height: 30rem;
+}
+
+main img {
+    width: auto;
+    height: 200px;
+    margin: 2rem;
+    float: right;
+}
+
+.resources {
+    border: 2px solid black;
+    margin: ;
+    text-align: center;
+	grid-column: 1/3;
+	grid-row: 1/4;
+    position: relative;
+	width: 30rem;
+	height: 30rem;
+}
