@@ -40,7 +40,13 @@ main {
     grid-template-columns: 1% 59% 8% 39%;
     margin: 2rem;
     padding: 10px;
+    max-width: auto;
     height: 30rem;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
 }
 
 h2 {
@@ -56,30 +62,43 @@ h2 {
 
 .card {
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column: 2/4;
     border: 2px solid black;
     border-radius: 1rem; /* this is to round out the corners of the border*/
-    width: 60rem;
-	height: 30rem;
+
 }
 
 main img {
     border-radius: 0.5rem; /* this is to round out the corners of the border*/
-    grid-column: 1/3;
-    grid-row: 1/4;
+
     width: auto;
-    height: 200px;
+    height: 150px;
     margin: 2rem;
     float: right;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.scotland img {
+    grid-column-start: 1;
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+.scotland {
+    display: grid;
+    justify-content: center;
 }
 
 .resources {
     border: 2px solid black;
     border-radius: 1rem; /* this is to round out the corners of the border*/
     text-align: center;
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column: 4/5;
     position: relative;
 	width: 30rem;
 	height: 30rem;
