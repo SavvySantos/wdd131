@@ -40,7 +40,6 @@ main {
     grid-template-columns: .05% 59% 8% 39%;
     margin: 2rem;
     padding: 10px;
-    max-width: auto;
     height: 30rem;
 }
 
