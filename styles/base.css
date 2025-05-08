@@ -44,6 +44,11 @@ main {
     max-width: 2500px;
 }
 
+div {
+    text-align: left;
+    margin: 2rem;
+}
+
 .card img {
     width: 200px;
     height: auto;
@@ -79,18 +84,21 @@ main img {
 h3 {
     display: flex;
     justify-content: center;
+    font-size: x-large;
+    text-decoration: underline;
 }
 
-.scotland img {
+.utah img {
     grid-column-start: 1;
     float: left;
     width: 200px;
     height: auto;
 }
 
-.scotland {
-    display: grid;
-    justify-content: center;
+ul {
+    text-align: left;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .resources {
