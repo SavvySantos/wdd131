@@ -74,9 +74,8 @@ h2 {
 
 main img {
     border-radius: 0.5rem; /* this is to round out the corners of the border*/
-
-    width: auto;
-    height: 150px;
+    width: 200px;
+    height: auto;
     margin: 2rem;
     float: right;
 }
