@@ -47,7 +47,7 @@ nav ul {
 	color: white;
 }
 
-.navigation:hover {
+nav a:hover {
     border: black;
     border-radius: 0.5rem;
 }
