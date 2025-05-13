@@ -28,16 +28,16 @@ nav {
     font-weight: bold;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-.navigation a {
+nav a {
     display: none;
     text-decoration: none;
     color: white;
     padding: 1rem;
     text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
 }
 
 .navigation {
