@@ -48,8 +48,8 @@ nav ul {
 }
 
 nav a:hover {
-    border: black;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem; /* this is to round out the corners of the border*/
+    border: 2px solid white;
 }
 
 figure img {
@@ -81,7 +81,7 @@ figure img {
 	display: block;
 }
 
-.active::before { 
+.using::before { 
 	content: "📍";  /* just a wayfinding symbol for the user */
 }
 
