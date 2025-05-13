@@ -83,13 +83,13 @@ figcaption {
 
 /* small view navigation */
 #menu {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	border: none;
 	background: none;
 	color: #000;
 	position: absolute;
-	top: 1.5rem;
-	right: 1.5rem;
+	top: 2rem;
+	right: 0.5rem;
 }
 
 #menu::before {
