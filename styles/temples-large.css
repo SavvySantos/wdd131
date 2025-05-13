@@ -23,5 +23,10 @@
 		flex: 1 1 100%;
 	}
 
+    main {
+        display: block;
+        grid-template-columns: 1fr;
+        
+    }
 
 }
