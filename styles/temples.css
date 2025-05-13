@@ -51,7 +51,7 @@ nav ul {
 }
 
 nav a:hover {
-    border-radius: 0.5rem; /* this is to round out the corners of the border*/
+    border-radius: 0.5rem;
     border: 2px solid white;
 }
 
@@ -81,7 +81,6 @@ figcaption {
     padding: 1rem;
 }
 
-/* small view navigation */
 #menu {
 	font-size: 1.5rem;
 	border: none;
@@ -100,15 +99,10 @@ figcaption {
 	content: "❌";
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
 	display: block;
 }
 
 .using::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
-}
-
-footer {
-
+	content: "📍";
 }
