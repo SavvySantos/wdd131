@@ -53,8 +53,23 @@ nav a:hover {
 }
 
 figure img {
-    width: 500px;
+    width: 300px;
     height: auto;
+}
+
+main {
+    max-width: 100%;
+    margin: 1rem auto;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+figure {
+    margin: 1rem auto;
+    padding: 1rem;
 }
 
 /* small view navigation */
