@@ -5,33 +5,67 @@
 }
 
 h1 {
-	text-align: left;
-	font-family: times, serif;
-	font-size: 1.5rem;
-	margin-left: 1rem;
+	font-size: 3rem;
+	margin-left: 0;
+    padding: 1rem;
+    text-align: center;
 }
 
 h2 {
-	font-size: 1.2rem;
-	color: navy;
-	text-align: left;
-	margin: 1rem;
+    font-size: 2.5rem;
+	text-align: center;
+}
+
+header {
+    background-color: rgb(53, 4, 248);
+    color: white;
 }
 
 nav {
 	max-width: 700px;
 	margin: 1rem auto;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.navigation a {
+    display: none;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	color: white;
+}
+
+.navigation:hover {
+    border: black;
+    border-radius: 0.5rem;
+}
+
+figure img {
+    width: 500px;
+    height: auto;
 }
 
 /* small view navigation */
 #menu {
-	font-size: 1.5rem;
-	border: 0;
+	font-size: 2rem;
+	border: none;
 	background: none;
 	color: #000;
 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	top: 1.5rem;
+	right: 1.5rem;
 }
 
 #menu::before {
@@ -40,28 +74,6 @@ nav {
 
 #menu.open::before {
 	content: "❌";
-}
-
-.navigation {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
-}
-
-.navigation a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-.navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
@@ -73,27 +85,6 @@ nav {
 	content: "📍";  /* just a wayfinding symbol for the user */
 }
 
-.stuff {
-	margin: 0.5rem;
-	border: 1px solid rgb(0  0  0 / 0.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
-}
 
-
-
-   figure img {
-        width: 500px;
-        height: auto;
-    }
 
     
-    header {
-        background-color: rgb(4, 41, 249);
-        color: rgb(1, 1, 1);
-    }
-
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
