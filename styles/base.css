@@ -4,29 +4,59 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
 
-header, footer {
-    background-color: #f0cdcd;
-    text-align: center;
+header span, h1,h2,h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header h1 {
-    margin-bottom: 0.5em; /*gave space under the h1 tag */
-}
-
-h1 {
-    padding: 1rem;
+    font-size: xx-large;
+    margin: 0 auto;
+    display: flex;
+    padding: 25px;
+    margin: 0 auto;
 }
 
 nav {
     display: flex;
     margin: 0 auto;
+    padding: 5px;
     justify-content: space-evenly; /*will space out my links evenly. Can be used if display is flex*/
     background-color: rgb(94, 21, 21);
+    gap: 20px;
+}
+
+main {
+    width: 100%;
+    display: grid; /*makes this section responsive to the size of screen the user is using*/
+    place-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 60%,40%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 1rem; /* this is to round out the corners of the border*/
+}
+
+h1 {
+    margin: 1px; /*gave space under the h1 tag */
+    font-size: 45px;
+}
+
+header, footer {
+    background-color: #f0cdcd;
+    text-align: center;
 }
 
 nav a {
@@ -41,16 +71,9 @@ nav a:hover {
     border: 2px solid white;
 }
 
-main {
-    display: flex; /*makes this section responsive to the size of screen the user is using*/
-    gap: 1em; /*gives space between "about me" and "web dev resources" boxes*/
-    margin: 2rem;
-    padding: 1em;
-}
 
 h2 {
-    display: flex;
-    justify-content: center;
+    display: grid;
     background-color: rgb(94, 21, 21);
     border-radius: 1rem; /* this is to round out the corners of the border*/
     color: white;
@@ -75,15 +98,13 @@ h3 {
 }
 
 .utah img{
-    grid-column-start: 1;
     float: left;
-    margin: 1.5rem;
-    width: 300px;
+    width: 200px;
     height: auto;
 }
 
 section p {
-    padding: 4rem;
+    padding: 1rem;
     font-size: medium;
 }
 
@@ -100,28 +121,12 @@ a {
     
 }
 
-.resources a:hover {
+.card a:hover {
     color: rgb(255, 99, 71);
 }
 
 .container {
-    display: flex;
-    gap: 1em;
-}
-
-.card {
-    width: 75%;
-    gap: 1em;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 1rem; /* this is to round out the corners of the border*/
-}
-
-.resources {
-    width: 25%;
-    gap: 1em;
-    justify-content: flex-start;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 1rem; /* this is to round out the corners of the border*/
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
 }
