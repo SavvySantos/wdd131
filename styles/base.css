@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
 header, footer {
     background-color: #f0cdcd;
     text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5em; /*gave space under the h1 tag */
 }
 
 h1 {
@@ -21,13 +30,10 @@ nav {
 }
 
 nav a {
-    list-style-type: none;
-    display: block;
     color: white;
-    text-align: center; /*will align my text for my links to the center*/
     padding: 1rem;
-    flex: 1 1 100%;
-    text-decoration: none;
+    flex: 1 1 100%; /*aligns my links evenly accross the page*/
+    text-decoration: none; /*gets rid of the underlines under my links*/
 }
 
 nav a:hover {
@@ -36,22 +42,10 @@ nav a:hover {
 }
 
 main {
-    display: grid;
-    grid-template-columns: .05% 59% 8% 39%;
+    display: flex; /*makes this section responsive to the size of screen the user is using*/
+    gap: 1em; /*gives space between "about me" and "web dev resources" boxes*/
     margin: 2rem;
-    padding: 10px;
-    height: 30rem;
-    max-width: 2500px;
-}
-
-div {
-    text-align: left;
-    margin: 2rem;
-}
-
-.card img {
-    width: 200px;
-    height: auto;
+    padding: 1em;
 }
 
 h2 {
@@ -65,15 +59,8 @@ h2 {
     font-size: x-large;
 }
 
-.card {
-    text-align: center;
-    grid-column: 2/4;
-    border: 2px solid black;
-    border-radius: 1rem; /* this is to round out the corners of the border*/
-}
-
 main img {
-    border-radius: 0.5rem; /* this is to round out the corners of the border*/
+    border-radius: 1rem; /* this is to round out the corners of the border*/
     width: 200px;
     height: auto;
     margin: 2rem;
@@ -87,25 +74,54 @@ h3 {
     text-decoration: underline;
 }
 
-.utah img {
+.utah img{
     grid-column-start: 1;
     float: left;
-    width: 200px;
+    margin: 1.5rem;
+    width: 300px;
     height: auto;
 }
 
+section p {
+    padding: 4rem;
+    font-size: medium;
+}
+
 ul {
-    text-align: left;
+    list-style-type: none;
+    text-align: center;
     margin: 1rem;
     padding: 1rem;
 }
 
-.resources {
+a {
+    color: blue;
+    text-decoration: none;
+    
+}
+
+.resources a:hover {
+    color: rgb(255, 99, 71);
+}
+
+.container {
+    display: flex;
+    gap: 1em;
+}
+
+.card {
+    width: 75%;
+    gap: 1em;
+    text-align: center;
     border: 2px solid black;
     border-radius: 1rem; /* this is to round out the corners of the border*/
+}
+
+.resources {
+    width: 25%;
+    gap: 1em;
+    justify-content: flex-start;
     text-align: center;
-    grid-column: 4/6;
-    position: relative;
-	width: 30rem;
-	height: 30rem;
+    border: 2px solid black;
+    border-radius: 1rem; /* this is to round out the corners of the border*/
 }
