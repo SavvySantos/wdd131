@@ -10,16 +10,34 @@
     }
 }
 
+.header-top {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.title-container h1 {
+    margin: 0;
+}
+#course-title {
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
 header span, h1,h2,h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header h1 {
+header span, header h1 {
     font-size: xx-large;
     margin: 0 auto;
     display: flex;
     padding: 25px;
     margin: 0 auto;
+    flex-wrap: none;
 }
 
 nav {
@@ -48,14 +66,13 @@ main {
     border-radius: 1rem; /* this is to round out the corners of the border*/
 }
 
-h1 {
-    margin: 1px; /*gave space under the h1 tag */
-    font-size: 45px;
-}
-
 header, footer {
     background-color: #f0cdcd;
     text-align: center;
+}
+
+header {
+    position: relative;
 }
 
 nav a {
