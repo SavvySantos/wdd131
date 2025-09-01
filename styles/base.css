@@ -13,6 +13,7 @@
 #course-title {
     display: inline-block;
     font-size: 2rem;
+    font-weight: bold;
     margin-top: 20px;
 }
 
@@ -29,10 +30,13 @@ header span, header h1 {
     flex-wrap: none;
 }
 
- h1 {
+ header h1 {
     display: inline-block;
     text-align: left;
+}
 
+footer {
+    padding: 15px;
 }
 
 nav {
