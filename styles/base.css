@@ -27,12 +27,12 @@ header span, header h1 {
     display: flex;
     padding: 10px;
     margin: 0 auto;
-    flex-wrap: none;
 }
 
  header h1 {
     display: inline-block;
     text-align: left;
+
 }
 
 footer {
