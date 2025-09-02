@@ -32,6 +32,10 @@ footer {
 
 }
 
+.my-name {
+    padding: 0;
+}
+
 nav {
     display: flex;
     margin: 0 auto;
