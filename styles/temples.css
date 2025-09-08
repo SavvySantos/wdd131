@@ -97,7 +97,6 @@ figcaption {
 }
 
 #menu.open::before {
-    size: 1rem;
 	content: "❌";
 }
 
