@@ -19,8 +19,8 @@ h2 {
 }
 
 header, footer {
-    background-color: rgb(53, 4, 248);
-    color: white;
+    background-color: rgb(65, 224, 235);
+    color: navy;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ nav {
 nav a {
     display: none;
     text-decoration: none;
-    color: white;
+    color: navy;
     padding: 1rem;
     text-align: center;
 }
@@ -82,16 +82,17 @@ figcaption {
 }
 
 #menu {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	border: none;
 	background: none;
-	color: #000;
+	color: #050101;
 	position: absolute;
-	top: 1.5rem;
-	right: 0.5rem;
+	top: 2rem;
+	right: 1rem;
 }
 
 #menu::before {
+    margin: 0.25rem;
 	content: "☰";
 }
 
