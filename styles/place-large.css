@@ -8,6 +8,11 @@
             height: 50px;
         }
 
+        :root {
+            --main-bg: url("scotland-fall.jpg");
+            --main-color: #004A96;
+            --accent: white;
+        }
     .weather h2::after {
     content: "🌤️";
     }
