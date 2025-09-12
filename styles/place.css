@@ -16,7 +16,7 @@ h1 {
     padding: 1rem;
     text-align: center;
     font-family: "Bebas", sans-serif;
-    color: white;
+    color: var(--accent);
     background-color: var(--main-color);
 }
 
@@ -38,7 +38,7 @@ h2 {
 
 header, footer, .data h2,.weather h2 {
     background-color: var(--main-color);
-    color: white;
+    color: var(--accent);
 }
 
 footer {
