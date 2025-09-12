@@ -36,10 +36,6 @@ h2 {
     font-size: x-large;
 }
 
-.weather h2::after {
-    content: "🌤️";
-}
-
 header, footer, .data h2,.weather h2 {
     background-color: var(--main-color);
     color: white;
