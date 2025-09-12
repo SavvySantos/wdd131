@@ -4,12 +4,6 @@
 	box-sizing: border-box;
 }
 
-:root {
-    --main-bg: url("scotland-fall.jpg");
-    --main-color: #005EB8;
-    --accent: white;
-}
-
 h1 {
 	font-size: 2.5rem;
 	margin-left: 0;
@@ -98,4 +92,10 @@ footer {
 
 main {
     max-width: 100%;
+}
+
+:root {
+    --main-bg: url("scotland-fall.jpg");
+    --main-color: #005EB8;
+    --accent: white;
 }
