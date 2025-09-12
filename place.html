@@ -19,7 +19,11 @@
     </header>
     <main>
         <div class="container">
-            <img src="images/scotland-fall.jpg" alt="scotland-fall">
+            <img src="images/scotland-fall.jpg"
+            srcset="scotland-fall-small.jpg 480w, scotland-fall-medium.jpg 800w, scotland-fall-large.jpg 1200w"
+            sizes="(max-width: 600px) 480px,
+                   (max-width: 900px) 800px,
+                   1200px" alt="scotland-fall">
             <div class="data">
                 <h2>Data</h2>
                 <p>Area: <span id= "area">77,900 - 78,800</span></p>
