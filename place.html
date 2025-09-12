@@ -19,11 +19,15 @@
     </header>
     <main>
         <div class="container">
-            <img src="images/scotland-fall.jpg"
-            srcset="scotland-fall-small.jpg 480w, scotland-fall-medium.jpg 800w, scotland-fall-large.jpg 1200w"
-            sizes="(max-width: 600px) 480px,
-                   (max-width: 900px) 800px,
-                   1200px" alt="scotland-fall">
+           <picture>
+                <!-- Source for browsers that support SVG. Make sure your SVG file is correctly named and in the 'images' folder. -->
+                <source srcset="images/scotland-fall.svg" type="image/svg+xml">
+                <!-- Source for browsers that support WebP, with fallback to JPG. -->
+                <source srcset="images/scotland-fall.webp" type="image/webp">
+                <!-- The <img> element serves as a fallback for all other browsers. -->
+            </picture>
+            <img src="images/scotland-fall.jpg" alt="A scenic view of Scotland during the fall">
+
             <div class="data">
                 <h2>Data</h2>
                 <p>Area: <span id= "area">77,900 - 78,800</span></p>
