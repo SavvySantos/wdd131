@@ -10,10 +10,6 @@
     --accent: white;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 h1 {
 	font-size: 2.5rem;
 	margin-left: 0;
