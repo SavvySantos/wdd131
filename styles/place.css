@@ -10,6 +10,10 @@
     --accent: white;
 }
 
+header {
+    width: 100%;
+}
+
 h1 {
 	font-size: 2.5rem;
 	margin-left: 0;
@@ -31,7 +35,7 @@ h2 {
     text-align: left;
     padding: 1rem;
     margin-bottom: 1rem;
-    width: 50%;
+    width: 80%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: x-large;
 }
@@ -43,26 +47,41 @@ header, footer, .data h2,.weather h2 {
 
 footer {
     height: 5rem;
+    width: 100%;
     text-align: center;
     padding: 1rem;
 }
 
 .container {
     position: relative;
+    display: inline-block;
+    min-width: 100%;
+    min-height: 200px;
     background: url('scotland-fall.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.container img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .data {
     position: absolute;
     top: 5%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.4);
     padding-top: .5rem;
-    margin-left: .5rem;
+    left: .5rem;
     border-radius: 10px;
-    max-width: 600px;
+    width: 33.33%;
 }
 
 .data p, .weather p {
+    position: relative;
+    z-index: 1;
     font-weight: bold;
     font-size: large;
     padding-left: 2rem;
@@ -77,20 +96,15 @@ footer {
 
 .weather {
     position: absolute;
-    top: 5%;
-    background: rgba(255, 255, 255, 0.8);
+    bottom: 5%;
+    right: .5rem;
+    width: 35%;
+    background: rgba(255, 255, 255, 0.4);
     padding-top: .5rem;
-    margin-left: 56.5rem;
-    margin-top: 35rem;
     border-radius: 10px;
-    min-width: 600px;
 }
 
-.weather img {
-    position: relative;
-    width: 3rem;
-    float: right;
-}
+
 
 main {
     max-width: 100%;
