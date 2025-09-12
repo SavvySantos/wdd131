@@ -6,20 +6,12 @@
 		text-align: center;
 	}
 
-    h2 {
+    .data h2, .weather h2 {
         font-size: 2rem;
         text-align: center;
         background: none;
         color: black;
-        margin-left: 2rem;
-    }
-
-    .weather img {
-        width: 3rem;
-        height: auto;
-        padding: 0;
-        margin-left: 6rem;
-        margin-top: 0;
+        /*margin-left: 2rem;*/
     }
 
     .data, .weather {
@@ -27,18 +19,15 @@
     background: none;
     padding: 0;
     margin-left: 5rem;
+    margin-top: 0;
     }
 
-    .data h2, .weather h2 {
-        text-align: center;
-    }
-
-    .weather h2 {
+    .weather {
         margin-bottom: 0;
     }
 
     .data p, .weather p {
         text-align: left;
-        margin-left: 1rem;
+        margin-left: 0;
     }
 }
