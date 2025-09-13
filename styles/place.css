@@ -63,17 +63,19 @@ footer {
     width: 33.33%;
 }
 
-h2 {
+.data h2, .weather h2{
     font-size: 2.5rem;
     text-align: left;
     padding: 1rem;
-    margin-bottom: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: x-large;
 }
 
 .data h2, .weather-icon-container{
     width: 75%;
+    margin-bottom: 1rem;
+    margin-left: -6px;
+
 }
 
 .data p, .weather p {
@@ -97,7 +99,6 @@ h2 {
     right: .5rem;
     width: 35%;
     background: rgba(255, 255, 255, 0.4);
-    padding-top: .5rem;
     border-radius: 10px;
 }
 
