@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+header {
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+
+main {
+
+    gap: 5px;
+    justify-content: center;
+}
+
+main img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 2;
+    margin: 0 auto;
+    width: 400px;
+    height: 600px;
+    justify-self: center;
+    border: solid black;
+    border-width: 10px;
+    border-radius: 25px;
+    background: black;
+    animation: fade 2s;
+}
+
+header, footer {
+    text-align: center;
+    background-color: blue;
+    color: whitesmoke;
+    border-radius: 5px;
+
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
