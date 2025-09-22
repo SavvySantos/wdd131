@@ -12,6 +12,10 @@
 		justify-content: center;
 	}
 
+	main {
+		background-color: white;
+	}
+
 	.navigation {
 		display: flex;
 		width: auto;

@@ -6,6 +6,8 @@
 
 body {
     font-family: sans-serif;
+    background-color: rgb(65, 224, 235);
+
 }
 
 h1 {
@@ -36,7 +38,6 @@ p, h3 {
 }
 
 header, footer, .main-nav {
-    background-color: rgb(65, 224, 235);
     color: navy;
     text-align: center;
 }
