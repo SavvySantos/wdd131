@@ -1,31 +1,31 @@
 @media (min-width: 37.5em) {
+
 	h1 {
 		font-size: 3rem;
-		margin-left: 0;
-		text-align: center;
 	}
-
-    h2 {
-    font-size: 2.5rem;
-	text-align: center;
-    }
-
+	
 	#menu {
 		display: none; /* hide hamburger button */
 	}
 
+	header {
+		justify-content: center;
+	}
+
 	.navigation {
+		display: flex;
+		width: auto;
+		position: static;
+	}
+
+	.navigation .main-nav {
+		display: flex;
 		flex-direction: row;
+		justify-content: space-evenly;
+		font-size: 1.5rem;
+		gap: 1rem;
 	}
 
-	.navigation a {
-		display: block;
-		flex: 1 1 100%;
-	}
 
-    main {
-        display: block;
-        grid-template-columns: 1fr;
-    }
 
 }

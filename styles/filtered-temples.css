@@ -4,9 +4,12 @@
 	box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 h1 {
 	font-size: 2.5rem;
-	margin-left: 0;
     padding: 1rem;
     text-align: center;
     font-family: "Bebas", sans-serif;
@@ -15,70 +18,12 @@ h1 {
 h2 {
     font-size: 2.5rem;
 	text-align: center;
-    font-family: "Exo 2";
+    margin-top: 2rem;
+    font-family: "Exo 2", sans-serif;
 }
 
 h3 {
-    font-family: "Exo 2";
-}
-
-header, footer {
-    background-color: rgb(65, 224, 235);
-    color: navy;
-    text-align: center;
-}
-
-nav {
-	max-width: 700px;
-	margin: 1rem auto;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-.card {
-    background-color: gray;
-}
-
-nav a {
-    display: none;
-    text-decoration: none;
-    color: navy;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-.navigation {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	color: white;
-}
-
-nav a:hover {
-    border-radius: 0.5rem;
-    border: 2px solid white;
-}
-
-img {
-    width: 300px;
-    height: auto;
-    padding: .5rem;
-    margin-bottom: .5rem;
-}
-
-.temple-cards {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    place-items: center;
-    gap: 20px;
-}
-
-.temple-card {
-    background-color: lightgray;
+    font-family: "Exo 2", sans-serif;
 }
 
 p, h3 {
@@ -90,18 +35,79 @@ p, h3 {
     font-style: italic;
 }
 
-#menu {
-	font-size: 1rem;
-	border: none;
-	background: none;
-	color: #050101;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
+header, footer, .main-nav {
+    background-color: rgb(65, 224, 235);
+    color: navy;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem;
 }
 
 footer {
-    margin-top: 2rem;
+    padding: 1rem;
+
+}
+
+.navigation {
+    width: 100%;
+}
+
+.main-nav {
+	display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 8px;
+}
+
+.navigation.open {
+    display: block;
+    left: 0;
+    background-color: rgb(65, 224, 235);
+    z-index: 10;
+}
+
+.navigation.open .main-nav {
+    display: flex;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: navy;
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a:hover {
+    border-radius: 0.5rem;
+    border: 2px solid white;
+}
+
+#menu {
+    display: block;
+	font-size: 1rem;
+	border: none;
+	background: none;
+	color: navy;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    cursor: pointer;
 }
 
 #menu::before {
@@ -115,4 +121,25 @@ footer {
 
 .using::before { 
 	content: "📍";
+}
+
+.temple-cards {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    gap: 20px;
+    padding: 1rem;
+
+}
+
+.temple-card {
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    padding: .5rem;
+    margin-bottom: .5rem;
 }
