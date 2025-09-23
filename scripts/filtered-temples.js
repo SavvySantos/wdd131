@@ -2,6 +2,7 @@ const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const navigationList = document.querySelector('.main-nav');
 const container = document.querySelector('.temple-cards')
+const pageTitle = document.querySelector('h2');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
@@ -140,27 +141,22 @@ function displayTemples(filteredTemples)
 
   };
 
-  function displayOldTemples(temple)
+  const displayOldTemples = (temple) =>
   {
     const dedication = new Date(temple.dedicated).getFullYear();
     return dedication < 1900;
-  }
+  };
 
-  function displayNewTemples(temple)
+  const displayNewTemples = (temple) =>
   {
     const dedication = new Date(temple.dedicated).getFullYear();
     return dedication > 2000;
-  }
+  };
 
-  function displayLargeTemples(temple)
-  {
-    return temple.area > 90000;
-  }
+  const displayLargeTemples = (temple) => temple.area > 90000;
 
-  function displaySmallTemples(temple)
-  {
-    return temple.area < 10000;
-  }
+
+  const displaySmallTemples = (temple) => temple.area < 10000;
 
   function apply(filtered) {
     if (filtered){
@@ -185,13 +181,25 @@ function displayTemples(filteredTemples)
     }
   }
 
+  const titles = {
+    'Home': 'Home',
+    'Old': 'Old Temples',
+    'New': "New Temples",
+    'Large': 'Large Temples',
+    'Small': 'Small Temples',
+};
+
   navigationList.addEventListener('click', event => {
     if (event.target.tagName === 'A') {
       event.preventDefault();
       const filter = event.target.textContent.trim();
+      const filterFunction = filter[filter];
+
+      if (pageTitle && titles[filter]) {
+        pageTitle.textContent = titles[filter];
+      }
 
       updateActiveLinks(filter);
-      const filterFunction = filter[filter];
       apply(filterFunction);
       
       if (filter === 'Home') {
@@ -199,6 +207,7 @@ function displayTemples(filteredTemples)
       }
 
       if (filter === 'Old') {
+
         apply(displayOldTemples);
       }
 
