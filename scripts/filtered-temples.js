@@ -1,7 +1,6 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const navigationList = document.querySelector('.main-nav');
-const container = document.querySelector('.temple-cards')
 const pageTitle = document.querySelector('h2');
 
 hamButton.addEventListener('click', () => {
@@ -98,6 +97,8 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/freiberg-germany/800x500/freiberg-germany-temple-lds-664670-wallpaper.jpg"
   },
 ];
+
+const container = document.querySelector('.temple-cards')
 
 function createTempleCard(temple) {
     const templeCard = document.createElement('section');
@@ -226,6 +227,6 @@ function displayTemples(filteredTemples)
   });
 
   document.addEventListener('DOMContentLoaded', () => {
-      displayTemples(temples);
+    displayTemples(temples);
       updateActiveLinks('Home');
         });
