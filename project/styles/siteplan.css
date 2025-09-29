@@ -42,10 +42,6 @@ a {
     margin: 1rem;
 }
 
-footer, a {
-    
-}
-
 a:hover {
     border: solid black;
     border-radius: .5rem;
