@@ -104,8 +104,9 @@ input[type="submit"] {
     color: white;
     cursor: pointer;
     font-size: 1.25rem;
+    margin: .5rem auto 10%;
+    display: block;
 
-    margin: .5rem 10rem 10%;
 }
 
 .conf input[type="checkbox"]{
