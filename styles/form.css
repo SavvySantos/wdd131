@@ -122,7 +122,6 @@ input[type="submit"] {
 .checkbox-options label {
     display: flex;
     color: black;
-
     align-items: center;
     cursor: pointer;
 }
