@@ -1,0 +1,133 @@
+body {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: black;
+    color: white;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+.conf fieldset {
+    margin: 1rem auto;
+    border: solid black;
+    background-color: lightgray;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    max-width: 50%;
+}
+
+.conf label,
+.checkbox-group label,
+.checkbox-options label {
+    display: block;
+    padding: 1rem 0 0.5rem 0;
+    color: rgb(5, 2, 1);
+    font-size: .9rem;
+}
+
+.conf input:required {
+    border-left: solid 8px blue;
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0,0,0,0);
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+.rating > label {
+    color: goldenrod;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0 5px;
+    width: 20px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0,0,0,0);
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label {
+    color: red;
+}
+
+.rating > label::before {
+    content: "\2606";
+}
+
+.rating input:checked ~ label::before {
+    content: "\2605";
+}
+
+.checkbox-group {
+    color: rgb(5, 2, 1);
+    margin: 1rem 0;
+}
+
+.conf input[type="text"],
+.conf input[type="date"],
+.conf textarea,
+.conf select {
+    width: 50%;
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.conf textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    padding: .8rem;
+    border: none;
+    border-radius: 6px;
+    background-image: linear-gradient(red, #9c2c13);
+    color: white;
+    cursor: pointer;
+    font-size: 1.25rem;
+
+    margin: .5rem 10rem 10%;
+}
+
+.conf input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+.checkbox-options {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.checkbox-options label {
+    display: flex;
+    color: black;
+
+    align-items: center;
+    cursor: pointer;
+}
+
+footer {
+    padding: .25rem 2%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

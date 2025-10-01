@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review form by Savanah Santos</title>
+    <meta name="description" content="This page was created in 2025 by Savanah Santos for her WDD131 - Dynamic Web Fundamentals class to practice
+        building a form.">
+    <meta name="author" content="Savanah Santos">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+            <form method="get" action="review.html" class="conf">
+                <fieldset>
+                    <legend>Product Review Information</legend>
+                    <label for="product">Product Name*</label>
+                        <select id="product" name="product" required>
+                            <option value="" disabled selected>Choose a Product...</option>
+                        </select>
+                        <br><br>
+                    <label>Overall Rating*</label>
+                    <div class="rating">
+                        <input type="radio" name="rating" id="five-star" value="5" required><label for="five-star"></label>
+                        <input type="radio" name="rating" id="four-star" value="4" required><label for="four-star"></label>
+                        <input type="radio" name="rating" id="three-star" value="3" required><label for="three-star"></label>
+                        <input type="radio" name="rating" id="two-star" value="2" required><label for="two-star"></label>
+                        <input type="radio" name="rating" id="one-star" value="1" required><label for="one-star"></label>
+                    </div>
+
+                    <label for="installationDate">Date of Installation*</label>
+                    <input type="date" name="installationDate" required>
+
+                    <div class="checkbox-group">
+                        Which features did you find useful in the product?*<br>(Check all that apply)</div>
+                        <div class="checkbox-options">
+                            <label><input type="checkbox" id="durability" name="features" value="yes">Durability</label>
+                            <label><input type="checkbox" id="ease" name="features" value="yes">Ease of Use</label>
+                            <label><input type="checkbox" id="performance" name="features" value="yes">Performance</label>
+                            <label><input type="checkbox" id="design" name="features" value="yes">Design</label>
+                        </div>
+                    </div>
+
+                        <label for="review">Write your Review (Optional)</label>
+                        <textarea id="review" name="review" rows="5"></textarea>
+
+                    <label for="name">Your full name (Option)</label>
+                    <input type="text" id="name" name="name">
+                </fieldset>
+
+                <input type="submit" value="Post my Review">
+            </form>
+    </main>
+</body>
+<footer>
+    <p class="copyright">&copy;<span id="currentyear"></span>💕Savanah Santos💕 Utah USA</p>
+    <p class="modified">Last modified: <span id="lastmodified"></span>
+</footer>
+</html>
