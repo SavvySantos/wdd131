@@ -1,4 +1,4 @@
-@media (min-width: 35em)
+@media (min-width: 45em)
 {
 :root{
     --main-color: #2c3e50;
@@ -76,7 +76,7 @@
 
 	.main-nav li a {
 		color: white;
-		font-size: clamp(1rem, 2vw + 0.5rem, 2.2rem);
+		font-size: clamp(2.5rem, 5vw + 1rem, 3rem);
 		text-decoration: none;
 		padding: 0.5rem 1rem;
 		transition: background-color 0.3s ease;
@@ -106,7 +106,7 @@
 	}
 
 	.home-page a img {
-		max-width: 200px;
+		max-width: 400px;
 		height: auto;
 		border: 1px solid #ccc;
 		border-radius: 8px;
