@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+:root{
+    --main-color: #2c3e50;
+    --accent-color: #004d00;
+    --background: #fffaf0;
+	--font-color: #1c1c1c;
+    --highlight-color: #cc7000;
+}
+
+body{
+    text-align: center;
+    background-color: var(--background);
+}
+
+.nav-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 0;
+}
+
+.nav-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+header h1 {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+header h1::before {
+    content: "";
+    position: absolute;
+    left: 49%;
+    top: 0;
+    width: calc(200vw - 50%);
+    height: 97%;
+    z-index: -1;
+    background-color: var(--main-color);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+header h1 img.logo {
+    display: block;
+    width: clamp(180px, 35vw, 650px);
+    height: auto;
+    margin: -10px 0;
+    object-fit: contain;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Bebas Neue", Arial sans-serif;
+    color: var(--highlight-color);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+header, footer, .main-nav {
+    color: var(--font-color);
+    text-align: center;
+}
+
+header {
+    margin: 0;
+    padding: .15rem;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+footer {
+    padding: 1rem;
+}
+
+.navigation {
+    display: none;
+    flex-grow: 1;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    border-radius: 0 8px 8px 0;
+    z-index: 3;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    z-index: 10;
+    border-radius: 8px;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.main-nav {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 8px;
+    gap: 0.3rem;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav li a {
+    font-size: clamp(1rem, 2vw + 0.5, 2.2rem);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    color: var(--font-color);
+}
+
+.main-nav li a:hover {
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    border-radius: 0.5rem;
+}
+
+.navigation.open .main-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--font-color);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a:hover {
+    border-radius: 0.5rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: white;
+    position: relative;
+    z-index: 20;
+    display: block;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#menu::before {
+    margin: 0.25rem;
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 1rem .5rem 1rem;
+}
+
+main p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+nav a{
+    align-items: center;
+    color: var(--color);
+}
+
+a {
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--color);
+    font-size: 1rem;
+    font-family: "Bebas Neue", Arial sans-serif;
+    font-style: normal;
+    margin: .5rem;
+}
+
+.home-page a {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+.main-nav li a:hover,
+.main-nav a:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/*Service section on homepage*/
+
+.home-page {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.home-page a {
+    border: 4px solid var(--accent-color);
+    padding: 0;
+    margin: 0 2rem 2rem;
+}
+
+.home-page a img {
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.home-page a img:hover {
+    transform: scale(1.05);
+}
+ /*link hovers for services and main navigation at the top of the page*/
+.navigation a:hover,
+.home-page a:hover {
+    border: solid var(--color);
+    border-radius: .5rem;
+    padding: 5px;
+}
+
+
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    position: relative;
+}
+
+.footer-content {
+    background-color: var(--main-color);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.sociallinks{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.copyright-text {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: .90rem;
+    color: white;
+}
+
+.sociallinks a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sociallinks a:hover {
+    color: var(--accent-color);
+    border: none;
+    padding: 0;
+}
+
+.sociallinks img {
+    max-width: 2rem;
+}
+
+.wireframe-link a {
+    grid-column: 1/2;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    background-image: url("../images/roofing-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.hero-text {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    max-width: 700px;
+    z-index: 1;
+    font-family: "Montserrat", sans-serif;
+    color: var(--font-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+
+/*about us section on home page*/
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.about-box {
+    border: 1rem solid var(--accent-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-box h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.about-box p {
+    line-height: 1.6;
+}
+
+.about ul {
+    display: flex;
+    text-align: center;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 1rem 15rem;
+    flex-direction: column;
+}
+
+.about ul li {
+    margin-bottom: 0.5rem;
+}
+
+.about-box ul {
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.about-box ul li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-box {
+    color: var(--accent-color);
+    font-weight: bold;
+}
