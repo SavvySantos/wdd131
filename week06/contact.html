@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santos Roofing & Construction</title>
+    <meta name="description" content="This page was created in 2025 by Savanah Santos for her WDD131 - Dynamic Fundamentals class
+        for her WK6 project.">
+    <meta name="author" content="Savanah Santos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/santos.css">
+    <link rel="stylesheet" href="styles/santos-large.css">
+    <script src="scripts/santos.js" defer></script>
+</head>
+<body>
+        <header>
+            <div class="nav-wrapper">
+                <h1>
+                    <img src="images/santos-logo.png" alt="Santos Roofing & Construction logo" class="logo">
+                </h1>
+                <button type="button" id="menu">Menu</button>
+                    <nav class="navigation">
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <h1>Contact Us</h1>
+        <main>
+            <section class="main-contact">
+            <div class="content-wrapper">
+            <div class="contact-info-box">
+                <h2>Our Contact Info</h3>
+                
+                <p>Phone Number: </p>
+                <p><a href="tel:1234567890"><strong>Hugo Santos: </strong>405-590-5701</a></p>
+                <p><a href="tel:1234567890"><strong>Savanah Santos: </strong>405-215-8382</a></p>
+                
+                <p>Email Address:</p>
+                <a href="mailto:info@santosconstruction.com">roofingbysantos@yahoo.com</a>
+                
+                <p>Business Office Hours:</p>
+                <p class="hours">Mon-Sat 8am - 5pm</p>
+            </div>
+            <section class="contact-container" id="contact">
+                <form method="post" action="thank-you.html" class="conf">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label><strong>Full Name*</strong></label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label><strong>Phone:</strong></label>
+                    <input type="tel" name="phone" placeholder="1235551234">
+
+                    <label><strong>Email*</strong></label>
+                    <input type="email" name="email" placeholder="someone@gmail.com" required>
+
+                    <label><strong>Address*</strong></label>
+                    <textarea name="address" placeholder="123 Main St, City, State zip"></textarea>
+
+                </fieldset>
+
+                <fieldset class="checkbox">
+                    <legend>Work needing done:</legend>
+                    <label><strong>Check all that apply</strong></label><br>
+                        <label><input type="checkbox" name="roofing" value="yes">Roofing</label>
+                        <label><input type="checkbox" name="remodeling" value="yes">Remodeling</label>
+                        <label><input type="checkbox" name="repairs" value="yes">Repairs</label>
+                        <label><input type="checkbox" name="construction" value="yes">New Construction</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information/Details(optional):</legend>
+                    <label>
+                        <textarea name="message" rows="5" cols="40" placeholder="Enter any details about your project here..."></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+        </div>
+        </section>
+
+            <h2>Services</h2>
+            <div class="home-page">
+                <a href="shingles-roofing.html">
+                    <img src="images/roofing-5.jpg" alt="Shingle roofing image link">
+                    <h3>Shingle Roofing</h3>
+                </a>
+                <a href="metal-roofing.html">
+                    <img src="images/metal-roofing-4.jpg" alt="Metal roofing image link">
+                    <h3>Metal Roofing</h3>
+                </a>
+                <a href="siding.html">
+                    <img src="images/siding-1.jpg" alt="Siding image link">
+                    <h3>Siding</h3>
+                </a>
+                <a href="sheds.html">
+                    <img src="images/shed-hero.jpeg" alt="Shed image link">
+                    <h3>Sheds</h3>
+                </a>
+            </div>
+        </main>
+    <footer>
+        <div class="footer-content">
+            <div class="wireframe-link">
+                <a href="https://app.moqups.com/5fWI4KECgbSr72YWKQoItAqYx7pCxKDq/edit/page/ad64222d5">Wireframe</a> </div>
+            <div class="copyright-text">
+                <p class="copyright">&copy;<span id="currentyear"></span>💕Savanah Santos💕 Utah USA</p>
+                <p class="modified">Last modified: <span id="lastmodified"></span></p>
+            </div>
+            <div class="sociallinks">
+                <a href="https://www.facebook.com/santosconstruction17"><img class="facebook" src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/santosroofing17/"><img class="instagram" src="images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
