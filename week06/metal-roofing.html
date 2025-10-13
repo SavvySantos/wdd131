@@ -10,23 +10,68 @@
     <link rel="preconnecthref" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/santos-large.css">
     <link rel="stylesheet" href="styles/santos.css">
+    <link rel="stylesheet" href="styles/santos-large.css">
+    <script src="scripts/santos.js" defer></script>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santos Roofing & Construction</title>
+    <meta name="description" content="This page was created in 2025 by Savanah Santos for her WDD131 - Dynamic Fundamentals class
+        for her WK6 project.">
+    <meta name="author" content="Savanah Santos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/santos.css">
+    <link rel="stylesheet" href="styles/santos-large.css">
     <script src="scripts/santos.js" defer></script>
 </head>
 <body>
         <header>
-            <div class="main-nav">
-                <img src="images/santos-logo.jpg" alt="Santos Roofing & Construction logo">
-            </div> 
+            <div class="nav-wrapper">
+                <h1>
+                    <img src="images/santos-logo.png" alt="Santos Roofing & Construction logo" class="logo">
+                </h1>
                 <button type="button" id="menu">Menu</button>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact US</a></li>
-                </ul>
+                    <nav class="navigation">
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <h1>Welcome to Santos Roofing & Construction</h1>
+            <h2>Shingle Roofing Gallery</h2>
+            <div class="column">
+                <figure>
+                    <img src="images/metal-roofing-4.jpg" alt="shingles" loading="lazy">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/metal-1.jpg" alt="shingles" loading="lazy">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+    <footer>
+        <div class="footer-content">
+            <div class="wireframe-link">
+                <a href="https://app.moqups.com/5fWI4KECgbSr72YWKQoItAqYx7pCxKDq/edit/page/ad64222d5">Wireframe</a> </div>
+            <div class="copyright-text">
+                <p class="copyright">&copy;<span id="currentyear"></span>💕Savanah Santos💕 Utah USA</p>
+                <p class="modified">Last modified: <span id="lastmodified"></span></p>
+            </div>
+            <div class="sociallinks">
+                <a href="https://www.facebook.com/santosconstruction17"><img class="facebook" src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/santosroofing17/"><img class="instagram" src="images/instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -680,3 +680,32 @@ footer {
     font-weight: 600;
     color: var(--font-color);
 }
+
+/*Shingles Roofing Photo Gallary HTML*/
+
+figure img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    border: 10px solid var(--accent-color);
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    place-items: center;
+}
+
+figure {
+    margin: 0 auto;
+    padding: 2px;
+}
+
+figcaption {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.column figure {
+    transition: transform 0.2s ease;
+}
