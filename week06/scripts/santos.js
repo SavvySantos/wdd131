@@ -35,4 +35,24 @@ document.addEventListener("DOMContentLoaded", () => {
         menuButton.classList.toggle("open");
         navList.classList.toggle("open");
     });
+    
+    const businessInfo = {
+        name: "Santos Roofing & Construction",
+        phone: "405-590-5701",
+        hours: "Mon-Sat 8am-5pm"
+    };
+    console.log(`Content ${businessInfo.name} at ${businessInfo.phone}`);
+
+    const services = ["Roofing", "Siding", "Remodeling", "New Construction"]
+    const shortList = services.filter(service => service.length < 10);
+    console.log("Our short services list:", shortList);
+
+    const welcomeMessage = `Welcome to ${businessInfo.name}! We're open ${businessInfo.hours}.`;
+    console.log(welcomeMessage);
+
+    if (!localStorage.getItem("visitCount")) {
+        localStorage.setItem("visitCount", 1);
+    }
+
+    console.log(`You've visited this page ${localStorage.getItem("visitCount")} times.`)
 });

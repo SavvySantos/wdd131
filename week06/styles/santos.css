@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -204,16 +205,13 @@ nav a:hover {
 #menu::before {
     margin: 0.25rem;
     content: "☰";
+	border-bottom: 3px solid var(--highlight-color);
+    color: var(--highlight-color);
+    font-weight: bold;
 }
 
 #menu.open::before {
     content: "❌";
-}
-
-.using::before { 
-	border-bottom: 3px solid var(--highlight-color);
-    color: var(--highlight-color);
-    font-weight: bold;
 }
 
 ul{
@@ -425,7 +423,6 @@ footer {
 }
 
 .about-box {
-    border: 1rem solid var(--accent-color);
     border-radius: 8px;
     padding: 1.5rem;
     text-align: center;
